@@ -369,3 +369,41 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
     border: 1px dashed var(--tertiary);
   }
 }
+
+//landing page
+
+.tc-mid-section-1 {
+  padding-top: 20;
+  border-top: 20;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+  padding-top: 3em;
+}
+img {
+  vertical-align: middle;
+  width: 450px;
+  height: auto;
+}
+button a:visited {
+  color: #ffffff;
+}
+.btn-ct {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn-lp {
+  background-color: #10724F;
+  overflow: visible;
+  font-family: inherit;
+  text-rendering: auto;
+  text-align: center;
+}
+.tc-section-blurb {
+  margin-bottom: 1em;
+  max-width: 500px;
+}
