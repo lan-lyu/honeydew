@@ -85,6 +85,10 @@ input[type="color"]:focus,
   }
 }
 
+button#create-topic{
+    display:none;
+}
+
 .navigation-categories .search-banner {
   @include border-radius;
   height: 350px;
