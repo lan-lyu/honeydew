@@ -84,7 +84,60 @@ input[type="color"]:focus,
     }
   }
 }
+.landing-part-2 {
+    height: 600px;
+    background-color: #F5FFFA;
+    align-items: center;
+}
+.little-green{ 
+    font-size:14px;
+    color: #006400;
+    padding-top: 15px;
+} 
+.lp2-title-black{
+    width: 500px;
+    padding-top: 15px;
+}
+.example-box{
+    width: 1000px;
+    height: 300px;
+    background: transparent;
+    position: relative;
+    margin: 20px auto;
+}
+.img-lp2 {
+  vertical-align: middle;
+  width: 450px;
+  height: 200px;
+  border-radius:2em;
+  padding-top: 15px;
+}
+.text-put-center{
+    text-align: center;
+}
+.left-example-box,.right-example-box{
+    position: absolute;
+    width: 45%;
+    height: 100%;
 
+}
+img {
+  vertical-align: middle;
+  width: 450px;
+  height: auto;
+}
+.left-example-box{
+
+}
+
+.right-example-box{
+    left: 50%;
+}
+
+.text-lp2{
+    color: grey;
+    font-size: 14px;
+}
 button#create-topic{
     display:none;
 }
@@ -334,7 +387,24 @@ a {
 a:hover {
   color: var(--tertiary-hover);
 }
+.btn-ct-lp2 {
+  background-repeat:no-repeat;
+  border: none;
+  color: #006400;
+  cursor: pointer;
+  background-color: transparent;
+}
 
+.btn-lp2 {
+  background-repeat:no-repeat;
+  background-color: transparent;
+  border: none;
+  color: #006400;
+  overflow: visible;
+  font-family: inherit;
+  text-rendering: auto;
+  text-align: center;
+}
 .image-upload-controls .btn-default {
   border: 1px solid var(--secondary);
   .fa {
