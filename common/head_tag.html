@@ -1,0 +1,68 @@
+<script type="text/discourse-plugin" version="0.8">
+  api.registerConnectorClass("below-site-header", "custom-homepage", {
+    setupComponent(args, component) {
+     var topMenuRoutes = 
+        component.siteSettings.top_menu.split('|')
+        .map(function(route) {return '/' + route});
+     var homeRoute = topMenuRoutes[0];
+     api.onPageChange((url) => {
+        if (url === "/" || url === homeRoute ){ 
+          document.querySelector("html").classList.add("custom-homepage"); 
+          component.set("displayCustomHomepage", true); 
+        } else {  
+          document.querySelector("html").classList.remove("custom-homepage"); 
+          component.set("displayCustomHomepage", false); 
+        }
+      });
+    }
+  });
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/below-site-header/custom-homepage">
+    {{#if displayCustomHomepage}} 
+        <div class="custom-homepage-wrapper wrap">
+            <div class="tc-mid-section-1">
+                <div class="tc-mid-box-left">
+                    <div class="tc-text">
+                        <h1 class="tc-section-heading">Create a future with fair technology for everyone with everyone</h1>
+                        <div class="tc-section-blurb">We harness the power of the crowds, specifically you, to improve machine learning and algorithmic fairness. Create an account to join our community, where you can audit biases and participate in discussions!</div>
+                        <button class="btn btn-lp">
+                            <a href="#ember792" class="btn-ct">See all projects</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="tc-mid-box-right">
+                    <div class="tc-image">
+                        <img src="https://s3-alpha-sig.figma.com/img/3600/a9ea/11a2384cd08a027f1ded63cdf621bef1?Expires=1655078400&Signature=O5-6U3fJ0mGgFlKjFu-d1zTAlzEwSRRkTDelZE8Po5a91zLbmnmR8r-G-w4zlB6XtQ~9nVbT8dCyOokNK9K8bLPlx6GjowCeQKmjlv5TSH-VE-bLGL4R2ip9~XOQ11HxXB6H2Qm-goswIBcpVbTaNNJRsFdWA2ZfBQzujPD0RY5CRVn4SV3Hi6BYsK5W1yCSPQJg7GnZP6gxGVI6avDk8O8f7p-fIDPsrdUxDUJ0p1TYmaXdbjctSQE-7Uk7luxm~y0u5CUOowDxg7tTn9-n-wqn~SR~NXxSTKADg3yM40h5~8bjdqAOf17GMM7D4t-QSgbD35WsfosiEJp099CgFQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                    </div>
+                </div>
+            </div>
+            <div class="landing-part-2">
+                <div class="lp2-text">
+                    <div class="little-green text-put-center">What is algorithmic bias?</div>
+                    <h1 class="text-put-center">Algorithmic bias exists in everyday<br>digital products and services</h1>
+                </div>
+                <div class="example-box">
+                    <div class="left-example-box">
+                        <img src="https://dida.do/img/containers/assets/blog/20210409_di_cv-labeling-tools/cat-label-1617979660.png/8c6cc1e682d55f33ee01e8fcfb61b639.png" class="img-lp2">
+                        <div class="little-green">EXAMPLE 1 - RACIAL BIAS</div>
+                        <h3>Photo App's Auto Image Labeling</h3>
+                        <p class="text-lp2">Back in 2015, software engineer Jacky Alcine pointed out that the image recognition algorithms in Googld Photos were classifying his black friends as "gorillas",</p>
+                        <button class="btn-lp2">
+                            <a href="TBA" target="_blank" class="btn-ct-lp2">View Projects on Racial Bias -></a>
+                        </button>
+                    </div>
+                    <div class="right-example-box">
+                        <img src="https://cms.qz.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-12-at-6.39.44-PM.png?quality=75&strip=all&w=1200&h=900&crop=1" class="img-lp2">
+                        <div class="little-green">EXAMPLE 2 - GENDER BIAS</div>
+                        <h3>Bias in word associations</h3>
+                        <p class="text-lp2">Princeton University researchers found that words "woman" and "girl" were more likely to be associated with the arts instead of science and math, which were most likely connected to males.</p>
+                        <button class="btn-lp2">
+                            <a href="TBA" target="_blank" class="btn-ct-lp2">View Projects on Gender Bias -></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/if}}
+</script>
