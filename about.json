@@ -2,6 +2,11 @@
   "name": "Honeydew",
   "about_url": null,
   "license_url": null,
+  "assets": {
+      "WeAudit-intro-02": "assets/WeAudit-intro-02.png",
+      "img-racial-bias": "assets/img-racial-bias.png",
+      "img-gender-bias": "assets/img-gender-bias.png"
+  },
   "color_schemes": {
     "honeydew": {
       "primary": "454545",

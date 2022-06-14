@@ -86,31 +86,52 @@ input[type="color"]:focus,
 }
 
 .landing-part-2 {
-    height: 600px;
-    background-color: #F5FFFA;
+    height: 1003px;
+    background-color: #F7FCFA;
     align-items: center;
 }
+.lp2-text {
+  padding-top: 140px;
+}
 .little-green{ 
-    font-size:14px;
-    color: #006400;
-    padding-top: 15px;
+    font-size:16px;
+    color: #10724F;
+    padding-top: 20px;
 } 
+.karla-font {
+  font-style: Bold;
+  font-family: 'Karla';
+}
 .lp2-title-black{
-    width: 500px;
+    width: 640px;
     padding-top: 15px;
+    font-size: 36px;
 }
 .example-box{
     width: 1000px;
-    height: 300px;
+    height: 550px;
     background: transparent;
     position: relative;
     margin: 20px auto;
+    padding-top: 50.7px;
 }
-.img-lp2 {
+
+#img-lp2 {
+  background-image: url($img-racial-bias);
+  background-repeat: no-repeat;
   vertical-align: middle;
-  width: 450px;
-  height: 200px;
-  border-radius:2em;
+  width: 480px;
+  height: 283.12px;
+  // border-radius:2em;
+  padding-top: 15px;
+}
+#img-lp3 {
+  background-image: url($img-gender-bias);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 480px;
+  height: 283.12px;
+  // border-radius:2em;
   padding-top: 15px;
 }
 .text-put-center{
@@ -120,7 +141,6 @@ input[type="color"]:focus,
     position: absolute;
     width: 45%;
     height: 100%;
-
 }
 
 .right-example-box{
@@ -449,10 +469,16 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   margin-bottom: 3em;
   padding-top: 3em;
 }
+
 .img-lp1 {
+  // background-image: url($WeAudit-intro-02);
   vertical-align: middle;
   width: 450px;
   height: auto;
+}
+#img-lp1-id {
+  background-image: url($WeAudit-intro-02);
+  background-repeat: no-repeat;
 }
 button a:visited {
   color: #ffffff;
