@@ -19,9 +19,6 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/below-site-header/custom-homepage">
-  function resetHref() {
-    location.hash = '';
-    }
     {{#if displayCustomHomepage}} 
         <div class="custom-homepage-wrapper wrap">
             <div class="tc-mid-section-1">
@@ -67,3 +64,8 @@
         </div>
     {{/if}}
 </script>
+<script>
+  function resetHref() {
+    location.hash = '';
+    }
+ </script>
