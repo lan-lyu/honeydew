@@ -470,15 +470,18 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   padding-top: 3em;
 }
 
-.img-lp1 {
-  // background-image: url($WeAudit-intro-02);
-  vertical-align: middle;
-  width: 450px;
-  height: auto;
-}
+// .img-lp1 {
+//   // background-image: url($WeAudit-intro-02);
+//   vertical-align: middle;
+//   width: 450px;
+//   height: auto;
+// }
 #img-lp1-id {
   background-image: url($WeAudit-intro-02);
   background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 450px;
+  height: auto;
 }
 button a:visited {
   color: #ffffff;
