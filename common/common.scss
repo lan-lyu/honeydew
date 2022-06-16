@@ -463,7 +463,7 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   padding-top: 20;
   border-top: 20;
   height: 350px;
-  // display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3em;
@@ -481,7 +481,7 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   background-repeat: no-repeat;
   vertical-align: middle;
   width: 450px;
-  height: auto;
+  height: 350px;
 }
 button a:visited {
   color: #ffffff;
