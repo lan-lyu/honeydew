@@ -116,6 +116,10 @@ input[type="color"]:focus,
     padding-top: 50.7px;
 }
 
+.ref-links{
+  padding-top: 30px;
+}
+
 #img-lp2 {
   background-image: url($img-racial-bias);
   background-repeat: no-repeat;
@@ -407,6 +411,10 @@ a:hover {
   color: #006400;
   cursor: pointer;
   background-color: transparent;
+}
+
+.btn-ref {
+  color: #006400;
 }
 
 .btn-lp2 {
