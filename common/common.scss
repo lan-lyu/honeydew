@@ -510,3 +510,42 @@ button a:visited {
   margin-bottom: 1em;
   max-width: 500px;
 }
+// subcategory boxes
+.category-which-photo-will-twitter-algorithm-choose {
+  .category-box {
+    // border-style: ridge;
+    // border-color: black;
+    border: none;
+  }
+  .category-box-inner {
+      border-style: ridge;
+      border-color: black;
+      border-left-width: 2px;
+  }
+  .category-box-heading {
+    padding: 0;
+    border-radius: 3px;
+    img.logo { display: none; }
+    h3 { padding: 1em 0; }
+  }
+  .category-box-twitter-hypothesis {
+    .category-box-heading           { background-color: #E8CCFF; }
+    .category-box-heading > a[href] { color: white; }
+  }
+  .category-box-twitter-hypothesis-2 {
+    .category-box-heading           { background-color: #CCDDFF; }
+    .category-box-heading > a[href] { color: white; }
+  }
+  .category-box-twitter-hypothesis-3 {
+    .category-box-heading           { background-color: #BBFFEE; }
+    .category-box-heading > a[href] { color: white; }
+  }
+  .category-box-twitter-hypothesis-4 {
+    .category-box-heading           { background-color: #EEFFBB; }
+    .category-box-heading > a[href] { color: white; }
+  }
+  .category-box-new-twitter {
+    .category-box-heading           { background-color: #FFDDAA; }
+    .category-box-heading > a[href] { color: white; }
+  }
+}
