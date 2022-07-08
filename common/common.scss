@@ -160,7 +160,7 @@ input[type="color"]:focus,
   display:none;
 }
 
-.navigation-categories listbox#select-kit-header, .categories-list listbox#select-kit-header, .navigation-topics listbox#select-kit-header {
+.navigation-categories button#select-kit single-select combobox combo-box category-drop bullet ember-view, .categories-list button#select-kit single-select combobox combo-box category-drop bullet ember-view, .navigation-topics button#select-kit single-select combobox combo-box category-drop bullet ember-view {
   display:none;
 }
 
