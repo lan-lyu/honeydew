@@ -1,3 +1,8 @@
+<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/dontworry">
+  <a href="/" class> All Projects </a>
+  <a href="/tag/hypothesis" class> All Hypotheses </a>
+</script>
+
 <script type="text/discourse-plugin" version="0.8">
   api.registerConnectorClass("below-site-header", "custom-homepage", {
     setupComponent(args, component) {
@@ -69,9 +74,4 @@
             <div id="direct" name="direct"></div>
         </div>
     {{/if}}
-</script>
-
-<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/dontworry">
-  <a href="/" class> All Projects </a>
-  <a href="/tag/hypothesis" class> All Hypotheses </a>
 </script>
