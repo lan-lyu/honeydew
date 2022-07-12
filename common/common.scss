@@ -156,12 +156,12 @@ input[type="color"]:focus,
     font-size: 14px;
 }
 
-.navigation-categories button#create-topic, .categories-list button#create-topic, .navigation-topics button#create-topic {
-  display:none;
-}
-
-.navigation-categories span#name, .categories-list span#name, .navigation-topics span#name{
-  display:none;
+// Preventing item from being seen in the home page
+.navigation-categories, .categories-list, .navigation-topics {
+  // items being hidden from home page
+  button#create-topic, .dontworry, span#name {
+    display:none;
+  }
 }
 
 .navigation-categories .search-banner {
