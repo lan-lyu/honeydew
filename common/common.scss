@@ -549,3 +549,17 @@ button a:visited {
     .category-box-heading > a[href] { color: white; }
   }
 }
+//back buttons
+.discourse-back-button {
+  margin-top: 0.5em;
+  transition: all 0.25s;
+  .anon & {
+    display: none;
+  }
+}
+
+.timeline-docked-bottom {
+  .discourse-back-button {
+    opacity: 0;
+  }
+}
