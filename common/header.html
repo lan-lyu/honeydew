@@ -1,0 +1,12 @@
+<script type="text/discourse-plugin" version="0.8">
+  const { h } = require('virtual-dom');
+  api.createWidget('back-button', {
+    tagName: 'button.btn.btn-default.discourse-back-button',
+    html() {
+        return h('a', { href: "#skip-link" }, "Back");
+    }
+  });
+  api.decorateWidget('topic-timeline:after', function(helper) {
+    return helper.attach('back-button');
+  });
+</script>
