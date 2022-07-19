@@ -159,7 +159,7 @@ input[type="color"]:focus,
 // Preventing item from being seen in the home page
 .navigation-categories, .categories-list, .navigation-topics {
   // items being hidden from home page
-  button#create-topic, .dontworry, span#name {
+  button#create-topic, .dontworry, .selected-name {
     display:none;
   }
 }
