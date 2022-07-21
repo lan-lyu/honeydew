@@ -563,3 +563,19 @@ button a:visited {
     opacity: 0;
   }
 }
+//subcategories lists
+.no-description:nth-child(n+4) {
+  display: none;
+}
+
+.expand, .collapse {
+    float: right;
+    display: inline-flex;
+}
+
+.navigation-categories {
+  // items being hidden from home page
+  .custom-name {
+    display:none;
+  }
+}
