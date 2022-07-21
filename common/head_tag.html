@@ -174,14 +174,16 @@
   });
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/collapse-btn"> 
-  <a href="/" class> All Projects </a>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/custom-name"> 
+  <div class="collapse-btn">
   {{mount-widget widget="expand"}}
   {{mount-widget widget="collapse"}}
+  </div>
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/subs-btn"> 
-  <a href="/" class> All Projects </a>
+<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/custom-name"> 
+  <div class="subs-btn">
   {{mount-widget widget="show-all-subs"}}
   {{mount-widget widget="hide-all-subs"}}
+  </div>
 </script>
