@@ -575,7 +575,7 @@ button a:visited {
 
 .navigation-categories, .categories-list, .navigation-topics {
   // items being hidden from home page
-  .collapse-btn .subs-btn {
+  .collapse-btn, .subs-btn {
     display:none;
   }
 }
