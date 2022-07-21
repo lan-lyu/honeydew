@@ -1,5 +1,6 @@
 <!-- subcategories list above topics -->
 <script type="text/discourse-plugin" version="0.8">
+  const { h } = require('virtual-dom');
   api.createWidget("show-all-subs", {
     tagName: "button.btn.btn-default.show-all-subs",
     html() {
