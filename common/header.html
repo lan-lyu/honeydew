@@ -4,7 +4,7 @@
   api.createWidget("show-all-subs", {
     tagName: "button.btn.btn-default.show-all-subs",
     html() {
-      return h('span', "Show All Subcategories");
+      return h('span', "Show All Hypotheses");
     },
     click() {
       const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
@@ -32,7 +32,7 @@
     api.createWidget("hide-all-subs", {
     tagName: "button.btn.btn-default.hide-all-subs",
     html() {
-      return h('span', "Hide All Subcategories");
+      return h('span', "Hide All Hypotheses");
     },
     click() {
       const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
