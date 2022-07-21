@@ -88,3 +88,97 @@
         </div>
     {{/if}}
 </script>
+
+// subcategories list above topics
+<script type="text/discourse-plugin" version="0.8">
+  api.createWidget("show-all-subs", {
+    tagName: "button.btn.btn-default.show-all-subs",
+    html() {
+      return h('span', "Show All Subcategories");
+    },
+    click() {
+      const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
+      cats.forEach(cat => {
+        cat.style.display = 'table-row';
+        });
+      const ts = document.querySelectorAll('.topic-list');
+      ts.forEach(t => {
+        t.style.display = 'none';
+        });
+      const hs = document.querySelectorAll('.category-list.with-topics');
+      hs.forEach(h => {
+        h.style.display = 'table';
+        });
+      const cs = document.querySelectorAll('.collapse');
+      cs.forEach(c => {
+        c.style.display = 'inline-flex';
+        });
+      const es = document.querySelectorAll('.expand');
+      es.forEach(e => {
+        e.style.display = 'inline-flex';
+        });
+    }
+  });
+    api.createWidget("hide-all-subs", {
+    tagName: "button.btn.btn-default.hide-all-subs",
+    html() {
+      return h('span', "Hide All Subcategories");
+    },
+    click() {
+      const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
+      cats.forEach(cat => {
+        cat.style.display = 'none';
+        });
+      const ts = document.querySelectorAll('.topic-list');
+      ts.forEach(t => {
+        t.style.display = 'table';
+        });
+      const hs = document.querySelectorAll('.category-list.with-topics');
+      hs.forEach(h => {
+        h.style.display = 'none';
+        });
+      const cs = document.querySelectorAll('.collapse');
+      cs.forEach(c => {
+        c.style.display = 'none';
+        });
+      const es = document.querySelectorAll('.expand');
+      es.forEach(e => {
+        e.style.display = 'none';
+        });
+    }
+  });
+    api.createWidget("expand", {
+    tagName: "button.btn.btn-default.expand",
+    html() {
+      return h('span', "Expand");
+    },
+    click() {
+      const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
+      cats.forEach(cat => {
+        cat.style.display = 'table-row';
+        });
+    }
+  });
+    api.createWidget("collapse", {
+    tagName: "button.btn.btn-default.collapse",
+    html() {
+      return h('span', "Collapse");
+    },
+    click() {
+      const cats = document.querySelectorAll('.no-description:nth-child(n+4)');
+      cats.forEach(cat => {
+        cat.style.display = 'none';
+        });
+    }
+  });
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/custom-name"> 
+  {{mount-widget widget="expand"}}
+  {{mount-widget widget="collapse"}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/custom-name"> 
+  {{mount-widget widget="show-all-subs"}}
+  {{mount-widget widget="hide-all-subs"}}
+</script>
