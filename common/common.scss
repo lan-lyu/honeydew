@@ -415,9 +415,6 @@ a:hover {
   color: #006400;
   cursor: pointer;
   background-color: transparent;
-  :visited {
-    color: #A5DCB2
-  }
 }
 
 .btn-ref {
@@ -433,6 +430,9 @@ a:hover {
   font-family: inherit;
   text-rendering: auto;
   text-align: center;
+  :visited {
+    color: #A5DCB2
+  }
 }
 .image-upload-controls .btn-default {
   border: 1px solid var(--secondary);
