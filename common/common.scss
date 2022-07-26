@@ -415,6 +415,9 @@ a:hover {
   color: #006400;
   cursor: pointer;
   background-color: transparent;
+  :visited {
+    color: #A5DCB2
+  }
 }
 
 .btn-ref {
