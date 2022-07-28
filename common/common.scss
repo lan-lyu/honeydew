@@ -98,6 +98,9 @@ input[type="color"]:focus,
     color: #10724F;
     padding-top: 20px;
 } 
+.bias-type-indicator{
+  padding-left: 50px;
+}
 .karla-font {
   font-style: Bold;
   font-family: 'Karla';
@@ -586,4 +589,5 @@ button a:visited {
 ul.bias-type li{
   list-style: none;
   display: inline;
+  margin-left: 10px;
 }
