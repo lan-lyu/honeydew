@@ -7,17 +7,17 @@
 <script type="text/discourse-plugin" version="0.8">
   api.registerConnectorClass("below-site-header", "custom-homepage", {
     setupComponent(args, component) {
-     var topMenuRoutes = 
+     var topMenuRoutes =
         component.siteSettings.top_menu.split('|')
         .map(function(route) {return '/' + route});
      var homeRoute = topMenuRoutes[0];
      api.onPageChange((url) => {
-        if (url === "/" || url === homeRoute ){ 
-          document.querySelector("html").classList.add("custom-homepage"); 
-          component.set("displayCustomHomepage", true); 
-        } else {  
-          document.querySelector("html").classList.remove("custom-homepage"); 
-          component.set("displayCustomHomepage", false); 
+        if (url === "/" || url === homeRoute ){
+          document.querySelector("html").classList.add("custom-homepage");
+          component.set("displayCustomHomepage", true);
+        } else {
+          document.querySelector("html").classList.remove("custom-homepage");
+          component.set("displayCustomHomepage", false);
         }
       });
     }
@@ -38,12 +38,12 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/below-site-header/custom-homepage">
-    {{#if displayCustomHomepage}} 
+    {{#if displayCustomHomepage}}
         <div class="custom-homepage-wrapper wrap">
             <div class="tc-mid-section-1">
                 <div class="tc-mid-box-left">
                     <div class="tc-text">
-                        <h1 class="tc-section-heading">Create a future with fair technology for everyone with everyone</h1>
+                        <h1 class="tc-section-heading karla-font">Create a future with fair technology for everyone with everyone</h1>
                         <div class="tc-section-blurb">We harness the power of the crowds, specifically you, to improve machine learning and algorithmic fairness. Create an account to join our community, where you can audit biases and participate in discussions!</div>
                         <button class="btn btn-lp">
                             <a href="#direct" class="btn-ct">See all projects</a>
@@ -61,8 +61,8 @@
             </div>
             <div class="landing-part-2">
                 <div class="lp2-text">
-                    <div class="little-green text-put-center">What is algorithmic bias?</div>
-                    <h1 class="text-put-center karla-font lp2-title-black">Algorithmic bias exists in everyday<br>digital products and services</h1>
+                    <div class="text-put-center karla-font lp2-title-black">What is algorithmic bias?</div>
+                    <h1 class="little-green text-put-center">Algorithmic bias exists in everyday<br>digital products and services</h1>
                 </div>
                 <div class="example-box">
                     <div class="left-example-box">
