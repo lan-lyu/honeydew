@@ -81,6 +81,18 @@
         });
     }
   });
+    api.createWidget("show-all-projects", {
+      tagName: "button.btn.btn-default.show-all-projects",
+      html() {
+        return h('span', "Show All Projects");
+      },
+      click() {
+        const projects = document.querySelectorAll('.category.category-box:nth-child(n+1)');
+        projects.forEach(pro => {
+          pro.style.display = 'grid';
+          });
+      }
+    });
 </script>
 
 <script type="text/x-handlebars" data-template-name="components/categories-only">
@@ -137,10 +149,9 @@
   <PluginOutlet @name="below-categories-only" @connectorTagName="div" @args={{hash categories=this.categories showTopics=this.showTopics}} />
 </script> 
 
-<!-- <script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/collapse-btn"> 
-  {{mount-widget widget="expand"}}
-  {{mount-widget widget="collapse"}}
-</script> -->
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/discovery-below"> 
+  {{mount-widget widget="show-all-projects"}}
+</script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/subs-btn"> 
   {{mount-widget widget="show-all-subs"}}
