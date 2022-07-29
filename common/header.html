@@ -87,9 +87,9 @@
         return h('span', "Show All Projects");
       },
       click() {
-        const projects = document.querySelectorAll('.category.category-box:nth-child(n+1)');
+        const projects = document.querySelectorAll('.category.category-box:nth-child(n+7)');
         projects.forEach(pro => {
-          pro.style.display = 'grid';
+          pro.style.display = 'flex';
           });
       }
     });
@@ -150,7 +150,7 @@
 </script> 
 
 <script type="text/discourse-plugin" version="0.8">
-  api.registerConnectorClass("above-footer", "show-all-projects-btn", {
+  api.registerConnectorClass("discovery-below", "show-all-projects-btn", {
     setupComponent(args, component) {
      var topMenuRoutes =
         component.siteSettings.top_menu.split('|')
@@ -169,7 +169,7 @@
   });
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/above-footer/show-all-projects-btn"> 
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/show-all-projects-btn"> 
   {{#if displayCustomHomepage}}
       {{mount-widget widget="show-all-projects"}}
   {{/if}}
