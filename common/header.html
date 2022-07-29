@@ -149,8 +149,30 @@
   <PluginOutlet @name="below-categories-only" @connectorTagName="div" @args={{hash categories=this.categories showTopics=this.showTopics}} />
 </script> 
 
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/show-all-projects-btn"> 
-  {{mount-widget widget="show-all-projects"}}
+<script type="text/discourse-plugin" version="0.8">
+  api.registerConnectorClass("above-footer", "show-all-projects-btn", {
+    setupComponent(args, component) {
+     var topMenuRoutes =
+        component.siteSettings.top_menu.split('|')
+        .map(function(route) {return '/' + route});
+     var homeRoute = topMenuRoutes[0];
+     api.onPageChange((url) => {
+        if (url === "/" || url === homeRoute ){
+          document.querySelector("html").classList.add("show-all-projects-btn");
+          component.set("displayCustomHomepage", true);
+        } else {
+          document.querySelector("html").classList.remove("show-all-projects-btn");
+          component.set("displayCustomHomepage", false);
+        }
+      });
+    }
+  });
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/above-footer/show-all-projects-btn"> 
+  {{#if displayCustomHomepage}}
+      {{mount-widget widget="show-all-projects"}}
+  {{/if}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/subs-btn"> 
