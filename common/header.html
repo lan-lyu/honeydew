@@ -170,12 +170,10 @@
      var homeRoute = topMenuRoutes[0];
      api.onPageChange((url) => {
         if (url === "/" || url === homeRoute ){
-          document.querySelector("html").classList.add("show-all-projects-btn");
-          document.querySelector("html").classList.add("collapse-some-projects");
+          document.querySelector("html").classList.add("projects-btn");
           component.set("displayCustomHomepage", true);
         } else {
-          document.querySelector("html").classList.remove("show-all-projects-btn");
-          document.querySelector("html").classList.remove("collapse-some-projects");
+          document.querySelector("html").classList.remove("projects-btn");
           component.set("displayCustomHomepage", false);
         }
       });
