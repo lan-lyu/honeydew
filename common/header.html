@@ -57,52 +57,61 @@
         });
     }
   });
+    var isCollapsed  = true;
     api.createWidget("expand", {
     tagName: "button.btn.btn-default.expand",
     html() {
-      return h('span', "Expand");
+        if (isCollapsed) {
+            return h('span', "Expand");
+        }
+        else {
+            return h('span', "Collapse");
+        }
+      
     },
     click() {
-      const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
-      cats.forEach(cat => {
-        cat.style.display = 'table-row';
-        });
-    }
-  });
-    api.createWidget("collapse", {
-    tagName: "button.btn.btn-default.collapse",
-    html() {
-      return h('span', "Collapse");
-    },
-    click() {
-      const cats = document.querySelectorAll('.no-description:nth-child(n+4)');
-      cats.forEach(cat => {
-        cat.style.display = 'none';
-        });
-    }
-  });
+        if (isCollapsed) {
+            const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
+            cats.forEach(cat => {
+                cat.style.display = 'table-row';
+            });
+            isCollapsed = false;
+        }
+        else {
+            const cats = document.querySelectorAll('.no-description:nth-child(n+4)');
+            cats.forEach(cat => {
+                cat.style.display = 'none';
+            });
+            isCollapsed = true;
+        }
+      }
+    });
+    var isAll = false;
     api.createWidget("show-all-projects", {
       tagName: "button.btn.btn-default.show-all-projects",
       html() {
-        return h('span', "Show All Projects");
+        if (isAll) {
+            return h('span', "Collapse");
+        }
+        else {
+            return h('span', "Show All Projects");
+        }
       },
       click() {
-        const projects = document.querySelectorAll('.category.category-box:nth-child(n+7)');
-        projects.forEach(pro => {
-          pro.style.display = 'flex';
-          });
-      }
-    });
-    api.createWidget("collapse-some-projects", {
-      tagName: "button.btn.btn-default.collapse-some-projects",
-      html() {
-        return h('span', "Collapse");
-      },
-      click() {
-        const projects = document.querySelectorAll('.category.category-box:nth-child(n+7)');
-        projects.forEach(pro => {
-          pro.style.display = 'none';
-          });
+        if (isAll) {
+            const projects = document.querySelectorAll('.category.category-box:nth-child(n+7)');
+            projects.forEach(pro => {
+              pro.style.display = 'none';
+            });
+            isAll = false;
+        }
+        else {
+            const projects = document.querySelectorAll('.category.category-box:nth-child(n+7)');
+            projects.forEach(pro => {
+              pro.style.display = 'flex';
+            });
+            isAll = true;
+        }
       }
     });
 </script>
@@ -127,7 +136,6 @@
         </tbody>
       </table>
       {{mount-widget widget="expand"}}
-      {{mount-widget widget="collapse"}}
     {{/if}}
   
     {{#if this.mutedCategories}}
@@ -184,7 +192,6 @@
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-below/projects-btn"> 
   {{#if displayCustomHomepage}}
       {{mount-widget widget="show-all-projects"}}
-      {{mount-widget widget="collapse-some-projects"}}
   {{/if}}
 </script>
 
