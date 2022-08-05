@@ -93,6 +93,18 @@
           });
       }
     });
+    api.createWidget("collapse-some-projects", {
+      tagName: "button.btn.btn-default.collapse-some-projects",
+      html() {
+        return h('span', "Collapse");
+      },
+      click() {
+        const projects = document.querySelectorAll('.category.category-box:nth-child(n+7)');
+        projects.forEach(pro => {
+          pro.style.display = 'none';
+          });
+      }
+    });
 </script>
 
 <script type="text/x-handlebars" data-template-name="components/categories-only">
@@ -150,7 +162,7 @@
 </script> 
 
 <script type="text/discourse-plugin" version="0.8">
-  api.registerConnectorClass("discovery-below", "show-all-projects-btn", {
+  api.registerConnectorClass("discovery-below", "projects-btn", {
     setupComponent(args, component) {
      var topMenuRoutes =
         component.siteSettings.top_menu.split('|')
@@ -159,9 +171,11 @@
      api.onPageChange((url) => {
         if (url === "/" || url === homeRoute ){
           document.querySelector("html").classList.add("show-all-projects-btn");
+          document.querySelector("html").classList.add("collapse-some-projects");
           component.set("displayCustomHomepage", true);
         } else {
           document.querySelector("html").classList.remove("show-all-projects-btn");
+          document.querySelector("html").classList.remove("collapse-some-projects");
           component.set("displayCustomHomepage", false);
         }
       });
@@ -169,9 +183,10 @@
   });
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/show-all-projects-btn"> 
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/projects-btn"> 
   {{#if displayCustomHomepage}}
       {{mount-widget widget="show-all-projects"}}
+      {{mount-widget widget="collapse-some-projects"}}
   {{/if}}
 </script>
 
