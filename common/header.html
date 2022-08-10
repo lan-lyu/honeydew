@@ -115,6 +115,24 @@
         }
       }
     });
+    api.registerConnectorClass("discovery-below", "projects-btn", {
+      setupComponent(args, component) {
+       var topMenuRoutes =
+          component.siteSettings.top_menu.split('|')
+          .map(function(route) {return '/' + route});
+       var homeRoute = topMenuRoutes[0];
+       api.onPageChange((url) => {
+          if (url === "/" || url === homeRoute ){
+            document.querySelector("html").classList.add("projects-btn");
+            component.set("displayCustomHomepage", true);
+            isAll = false;
+          } else {
+            document.querySelector("html").classList.remove("projects-btn");
+            component.set("displayCustomHomepage", false);
+          }
+        });
+      }
+    });
 </script>
 
 <script type="text/x-handlebars" data-template-name="components/categories-only">
@@ -169,26 +187,6 @@
   
   <PluginOutlet @name="below-categories-only" @connectorTagName="div" @args={{hash categories=this.categories showTopics=this.showTopics}} />
 </script> 
-
-<script type="text/discourse-plugin" version="0.8">
-  api.registerConnectorClass("discovery-below", "projects-btn", {
-    setupComponent(args, component) {
-     var topMenuRoutes =
-        component.siteSettings.top_menu.split('|')
-        .map(function(route) {return '/' + route});
-     var homeRoute = topMenuRoutes[0];
-     api.onPageChange((url) => {
-        if (url === "/" || url === homeRoute ){
-          document.querySelector("html").classList.add("projects-btn");
-          component.set("displayCustomHomepage", true);
-        } else {
-          document.querySelector("html").classList.remove("projects-btn");
-          component.set("displayCustomHomepage", false);
-        }
-      });
-    }
-  });
-</script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-below/projects-btn"> 
   {{#if displayCustomHomepage}}
