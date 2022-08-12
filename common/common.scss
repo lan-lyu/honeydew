@@ -623,3 +623,5 @@ li[title="the most active topics in the last year, month, week or day"] {
 .text-logo {
     color: #10724F;
 }
+
+.category-navigation ol > li:first-child { display: none; }
