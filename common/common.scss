@@ -166,9 +166,9 @@ input[type="color"]:focus,
 }
 
 // Preventing item from being seen in the home page
-.navigation-categories, .categories-list, .navigation-topics {
+.navigation-categories {
   // items being hidden from home page
-  button#create-topic, .dontworry, .category-drop-header {
+  button#create-topic, .dontworry, .category-drop-header, .subs-btn {
     display:none;
   }
 }
@@ -592,13 +592,6 @@ button a:visited {
 .show-all-projects {
     float: right;
     display: inline-flex;
-}
-
-.navigation-categories {
-  // items being hidden from home page
-  .subs-btn {
-    display:none;
-  }
 }
 
 .subcategory {
