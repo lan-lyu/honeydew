@@ -648,3 +648,11 @@ li[title="the most active topics in the last year, month, week or day"] {
 }
 
 .category-navigation ol > li:first-child { display: none; }
+
+#reply-control .with-tags .category-input {
+  display: none;
+}
+
+#reply-control .mini-tag-chooser {
+  margin: 0 0 8px 0px;
+}
