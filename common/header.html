@@ -4,7 +4,7 @@
   api.createWidget("show-all-subs", {
     tagName: "button.btn.btn-default.show-all-subs",
     html() {
-      return h('span', "View Hypotheses");
+      return h('span', "Bias Type");
     },
     click() {
       const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
@@ -33,7 +33,7 @@
     api.createWidget("hide-all-subs", {
     tagName: "button.btn.btn-default.hide-all-subs",
     html() {
-      return h('span', "View Posts");
+      return h('span', "Posts");
     },
     click() {
       const cats = document.querySelectorAll('.no-description:nth-child(n+1)');
@@ -68,7 +68,7 @@
         else {
             return h('span', "Collapse");
         }
-      
+
     },
     click() {
         if (isCollapsed) {
@@ -156,7 +156,7 @@
       </table>
       {{mount-widget widget="expand"}}
     {{/if}}
-  
+
     {{#if this.mutedCategories}}
       <div class="muted-categories">
         <a href class="muted-categories-link" {{action "toggleShowMuted"}}>
@@ -184,17 +184,17 @@
       </div>
     {{/if}}
   {{/if}}
-  
-  <PluginOutlet @name="below-categories-only" @connectorTagName="div" @args={{hash categories=this.categories showTopics=this.showTopics}} />
-</script> 
 
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/projects-btn"> 
+  <PluginOutlet @name="below-categories-only" @connectorTagName="div" @args={{hash categories=this.categories showTopics=this.showTopics}} />
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/projects-btn">
   {{#if displayCustomHomepage}}
       {{mount-widget widget="show-all-projects"}}
   {{/if}}
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/subs-btn"> 
+<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/subs-btn">
   {{mount-widget widget="show-all-subs"}}
   <span style="width:20px; height:10px; display:inline-block;"></span>
   {{mount-widget widget="hide-all-subs"}}
