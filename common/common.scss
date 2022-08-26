@@ -129,6 +129,15 @@ input[type="color"]:focus,
   color: inherit;
 }
 
+.ref-links-lp2{
+  padding-top: 10px;
+}
+
+.ref-links-lp2 a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 #img-lp2 {
   background-image: url($img-racial-bias);
   background-repeat: no-repeat;
