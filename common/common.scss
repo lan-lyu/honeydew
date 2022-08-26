@@ -445,10 +445,16 @@ a:hover {
   font-family: inherit;
   text-rendering: auto;
   text-align: center;
-  :visited {
-    color: #A5DCB2
-  }
+  // :visited {
+  //   color: #A5DCB2
+  // }
 }
+
+.btn-lp2 a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .image-upload-controls .btn-default {
   border: 1px solid var(--secondary);
   .fa {
