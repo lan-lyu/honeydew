@@ -177,7 +177,7 @@ input[type="color"]:focus,
 // Preventing item from being seen in the home page
 .navigation-categories {
   // items being hidden from home page
-  button#create-topic, .dontworry, .category-drop-header, .subs-btn {
+  button#create-topic, .dontworry, .category-drop-header {
     display:none;
   }
 }
