@@ -86,12 +86,12 @@ input[type="color"]:focus,
 }
 
 .landing-part-2 {
-    height: 1003px;
+    height: 703px;
     background-color: #F7FCFA;
     align-items: center;
 }
 .lp2-text {
-  padding-top: 140px;
+  padding-top: 10px;
 }
 .little-green{ 
     font-size:16px;
@@ -117,7 +117,7 @@ input[type="color"]:focus,
     background: transparent;
     position: relative;
     margin: 20px auto;
-    padding-top: 50.7px;
+    padding-top: 30.7px;
 }
 
 .ref-links{
@@ -512,8 +512,8 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3em;
-  padding-top: 3em;
+  margin-bottom: 0em;
+  padding-top: 0em;
 }
 
 #img-lp1-id {
@@ -665,3 +665,4 @@ ul.bias-type li{
 #reply-control .mini-tag-chooser {
   margin: 0 0 8px 0px;
 }
+
