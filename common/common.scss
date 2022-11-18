@@ -124,7 +124,7 @@ input[type="color"]:focus,
   vertical-align: middle;
   height: 100px;
   display: block;
-  margin-left: auto;
+  margin-left: 33%;
   margin-right: auto;
   width: 50%;
   padding-top: 15px;
@@ -135,7 +135,7 @@ input[type="color"]:focus,
   vertical-align: middle;
   height: 100px;
   display: block;
-  margin-left: auto;
+  margin-left: 33%;
   margin-right: auto;
   width: 50%;
   padding-top: 15px;
@@ -146,12 +146,23 @@ input[type="color"]:focus,
   vertical-align: middle;
   height: 100px;
   display: block;
-  margin-left: auto;
+  margin-left: 33%;
   margin-right: auto;
   width: 50%;
   padding-top: 15px;
 }
-
+.text-lp3{
+    color: grey;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-lp3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .landing-part-2 {
     height: 703px;
     background-color: #F7FCFA;
