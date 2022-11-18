@@ -99,6 +99,7 @@ input[type="color"]:focus,
     position: relative;
     margin: 20px auto;
     padding-top: 30.7px;
+    align-items: center;
 }
 .left-box,.right-box,.middle-box{
     position: absolute;
@@ -121,25 +122,24 @@ input[type="color"]:focus,
   background-image: url($Upload);
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: 300px;
-  height: 283.12px;
-  // border-radius:2em;
+//   width: 300px;
+//   height: 283.12px;
   padding-top: 15px;
 }
 #img-middle {
   background-image: url($Audit);
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: 300px;
-  height: 283.12px;
+//   width: 300px;
+//   height: 283.12px;
   padding-top: 15px;
 }
 #img-right {
   background-image: url($Discuss);
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: 300px;
-  height: 283.12px;
+//   width: 300px;
+//   height: 283.12px;
   padding-top: 15px;
 }
 
