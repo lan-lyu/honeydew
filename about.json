@@ -5,7 +5,10 @@
   "assets": {
       "WeAudit-intro-02": "assets/WeAudit-intro-02.png",
       "img-racial-bias": "assets/img-racial-bias.png",
-      "img-gender-bias": "assets/img-gender-bias.png"
+      "img-gender-bias": "assets/img-gender-bias.png"，
+      "Audit": "assets/Audit.png",
+      "Discuss": "assets/Discuss.png",
+      "Upload": "assets/Upload image.png"
   },
   "color_schemes": {
     "honeydew": {
