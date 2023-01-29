@@ -11,6 +11,7 @@ Useful Discourse links to get started:
   - For any other question, you can search and ask at https://meta.discourse.org/c/support/6
 
 Previous work summary:
+  - Honeydew is the repository linked to the WeAudit Discourse forum. The updates in this repository can be directly synced to WeAudit.
   - Landing Page:
     - The first section includes a "See all projects" button that directs to the end of this page and 3 links to a user guide, FAQ page, and the Dall-E project. The second section is a new design, so the three buttons "Upload", "Audit", and "Discuss" are not functioning. The third section is an introduction/discussion of algorithmic bias.
     - code at https://github.com/sew025/honeydew/blob/main/common/head_tag.html and https://github.com/sew025/honeydew/blob/main/common/common.scss.
