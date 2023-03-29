@@ -1,8 +1,6 @@
 # Discourse theme for WeAudit
 
 WeAudit Discourse Forum: https://forum.weaudit.org/
-  - Email/User name: cmuweaudit@gmail.com (password for this gmail is weaudit12345)
-  - Password: cmuweaudit12345
   
 Useful Discourse links to get started:
   - The following two guides are very useful for new designers to get acquainted with Discourse. The first one is more like an introduction etc. The second one is a very helpful and detailed guide for implementation of complicated buttons and other custom features.
