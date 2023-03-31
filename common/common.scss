@@ -102,9 +102,9 @@ input[type="color"]:focus,
     padding-top: 30.7px;
     align-items: center;
 }
-.left-box,.right-box,.middle-box{
+.left-box,.right-box{
     position: absolute;
-    width: 30%;
+    width: 44%;
     height: 100%;
 }
 
@@ -112,13 +112,10 @@ input[type="color"]:focus,
     left: 3%;
 }
 
-.middle-box{
-    left: 36%;
+.right-box{
+    left: 53%;
 }
 
-.right-box{
-    left: 69%;
-}
 #img-left {
   background-image: url($Upload);
   background-repeat: no-repeat;
