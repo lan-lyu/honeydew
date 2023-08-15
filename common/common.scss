@@ -224,7 +224,7 @@ input[type="color"]:focus,
   background: transparent;
   position: relative;
   margin: 20px auto;
-  padding-top: 30.7px;
+  padding-top: 20px;
 }
 
 .ref-links {
@@ -255,10 +255,10 @@ a:active {
   background-image: url($img-racial-bias);
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: 480px;
-  height: 283.12px;
-  // border-radius:2em;
-  padding-top: 15px;
+  height: 230px;
+  padding-top: 5px;
+  background-size: contain;
+  background-position: center center;
 }
 #img-lp3 {
   background-image: url($img-gender-bias);
@@ -275,7 +275,7 @@ a:active {
 .left-example-box,
 .right-example-box {
   position: absolute;
-  width: 45%;
+  width: 50%;
   height: 100%;
 }
 
@@ -672,6 +672,9 @@ button a:visited {
 .tc-section-blurb {
   margin-bottom: 1em;
   max-width: 500px;
+  padding-top: 10px;
+  font-size: 15px;
+  color: #5b5b5b;
 }
 // subcategory boxes
 .category-which-photo-will-twitter-algorithm-choose {
