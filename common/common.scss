@@ -149,6 +149,34 @@ input[type="color"]:focus,
   width: 50%;
   padding-top: 15px;
 }
+
+#img-left-big {
+  background-image: url($Audit);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 5px;
+}
+
+#img-right-big {
+  background-image: url($Discuss);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 5px;
+}
+
+
 .text-lp3{
     color: grey;
     font-size: 14px;
