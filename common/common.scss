@@ -232,7 +232,6 @@ input[type="color"]:focus,
 .ref-links {
   padding-top: 30px;
 }
-
 .ref-links a,
 a:hover,
 a:focus,
@@ -244,10 +243,16 @@ a:active {
 .example-links {
   padding-top: 10px;
   text-decoration: none;
-  color: inherit;
-  color: black;
+  // color: black;
   font-weight: 300;
   font-size: 15px;
+}
+.example-links a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 #img-lp2 {
