@@ -201,10 +201,11 @@ input[type="color"]:focus,
   padding-top: 10px;
 }
 .little-green {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 700;
   color: #10724f;
   padding-top: 20px;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
 }
 .bias-type-indicator {
   padding-left: 50px;
@@ -240,16 +241,13 @@ a:active {
   color: inherit;
 }
 
-.ref-links-lp2 {
+.example-links {
   padding-top: 10px;
-}
-
-.ref-links-lp2 a,
-a:hover,
-a:focus,
-a:active {
   text-decoration: none;
   color: inherit;
+  color: black;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 #img-lp2 {
