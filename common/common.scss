@@ -204,6 +204,7 @@ input[type="color"]:focus,
   font-size: 16px;
   color: #10724f;
   padding-top: 20px;
+  padding-bottom: 2px;
 }
 .bias-type-indicator {
   padding-left: 50px;
@@ -215,7 +216,7 @@ input[type="color"]:focus,
 }
 .lp2-title-black {
   // width: 640px;
-  padding-top: 15px;
+  padding-top: 5px;
   font-size: 36px;
 }
 .example-box {
@@ -290,6 +291,7 @@ a:active {
 .text-lp2 {
   color: grey;
   font-size: 14px;
+  padding-right: 25px;
 }
 
 // Preventing item from being seen in the home page
