@@ -88,7 +88,7 @@ input[type="color"]:focus,
 }
 
 .landing-part-3 {
-  height: 850px;
+  height: 800px;
   align-items: center;
   background-color: #F7FCFA;
   padding-bottom: 20px;
@@ -98,7 +98,7 @@ input[type="color"]:focus,
 }
 .boxes {
   width: 1000px;
-  height: 800px;
+  height: 280px;
   background: transparent;
   position: relative;
   margin: 20px auto;
@@ -106,8 +106,11 @@ input[type="color"]:focus,
   align-items: center;
 }
 .left-box,
-.right-box {
-  // position: absolute;
+.right-box {  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
   width: 44%;
   height: 100%;
 }
